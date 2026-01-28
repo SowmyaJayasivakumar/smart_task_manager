@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Task Mangaer</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1>Smart Task Manager</h1>
+        <nav>
+            {% if session.get('username')%}
+                <span class="welcome"> Welcome, {{ session['username'] }}</span>
+                <a href="{{url_for('logout')}}">Logout</a>
+            {% else %}
+                <a href="/signup">Signup</a>
+                <a href="/login">Login</a>
+            {% endif %}
+        </nav>
+        <!--Adding Task Form-->
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Task Title" required>
+            <br>
+            <textarea name="description" placeholder="Task Description"></textarea>
+            <br>
+            <button type="submit">Add Task</button>
+        </form>
+        <!--Task List-->
+        <h2>Tasks</h2>
+        <div class="task_list">
+            
+            <ul>
+                {% for task in tasks%}
+                
+                <li class="{% if task[4] == 'Completed' %} completed {% endif %}">
+                    <div class="task-content">
+                        <strong>{{ task[2] }}</strong>
+                        <br>
+                        <em>{{task[3]}} </em>
+                        <br>
+                    </div>
+                    <div class="status">
+                        <a href="/update/{{task[0]}}">Complete</a> ||
+                        <a href="/delete/{{task[0]}}">Delete</a>
+                    </div>
+                </li>
+                
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

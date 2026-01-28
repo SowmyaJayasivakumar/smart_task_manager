@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="{{url_for('static' , filename='style.css')}}">
+    </head>
+    <body>
+        <h1>SignUp - Smart Task Manager</h1><br><br>
+        <form action="{{ url_for('signup')}}" method="POST" class="check_users">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <button type="submit">SignUp</button>
+        </form>
+        <p class="users">Already have an account? <a href="{{ url_for('login')}}">Login Here</a></p>
+    </body>
+</html>

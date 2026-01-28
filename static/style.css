@@ -1,0 +1,139 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2{
+    text-align: center;
+}
+/* Form styling */
+form, .task_list {
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 550px;
+    border-radius: 8px;
+}
+
+.check_users{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.check_users input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+}
+.check_users button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.check_users button:hover {
+    background: #45a049;
+}
+
+
+form input, form textarea, form button {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li strong {
+    font-size: 1.1em;
+    color: #222;
+}
+
+li em {
+    color: #555;
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.completed{
+    text-decoration: line-through;
+}
+
+.completed strong,
+.completed em{
+    color: green;
+}
+
+.users{
+    text-align: center;
+}
+
+.status{
+    white-space: nowrap;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+}
+
+nav span{
+    font-weight: bold;
+}

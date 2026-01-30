@@ -26,16 +26,16 @@ This project was developed as part of my learning journey to strengthen backend 
 Smart-Task-Manager/  
 │  
 ├── app.py                 # Main Flask application  
-├── db.py                  # Database connection file
-├── requirements.txt       # Dependencies
-├── schema.sql             # Database schema
-├── templates/            # HTML templates
-│   ├── index.html
-│   └── login.html
-├── static/               # CSS & JS files
-│   ├── style.css
-│   └── script.js
-└── README.md              # Project documentation
+├── db.py                  # Database connection file  
+├── requirements.txt       # Dependencies  
+├── schema.sql             # Database schema  
+├── templates/            # HTML templates  
+│   ├── index.html  
+│   └── login.html  
+├── static/               # CSS & JS files  
+│   ├── style.css  
+│   └── script.js  
+└── README.md              # Project documentation  
 
 
 ---
@@ -47,20 +47,25 @@ Smart-Task-Manager/
    cd Smart-Task-Manager
    
 2. Create a virtual environment and install dependencies:
+   ```bash
    pip install -r requirements.txt
    
-3.  Set up the MySQL database:
+4.  Set up the MySQL database:
 
-  -> Create a database (e.g., task_manager)
-  -> Run schema.sql to create tables
-
-4. Update database credentials in db.py (host, user, password, db name)
-
-5. Run the Flask app:
-   python app.py
-
-6. Open in browser:
+  -> Create a database (e.g., task_manager)  
+  -> Run schema.sql to create tables  
+  
+4. Update database credentials in db.py (host, user, password, db name)  
+  
+5. Run the Flask app:  
+   python app.py  
+  
+6. Open in browser:  
    http://127.0.0.1:5000
-
+  
 ##Screenshots:
+Login page:  
+![Login page image](images/LOGIN.png)
 
+User based tasks:  
+![Tasks page image](images/TASKS.png)

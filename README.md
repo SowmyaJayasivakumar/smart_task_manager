@@ -23,21 +23,22 @@ This project was developed as part of my learning journey to strengthen backend 
 ---
 
 ## 📂 Project Structure
+```
 Smart-Task-Manager/  
 │  
 ├── app.py                 # Main Flask application  
 ├── db.py                  # Database connection file  
 ├── requirements.txt       # Dependencies  
 ├── schema.sql             # Database schema  
-├── templates/            # HTML templates  
+├── templates/             # HTML templates  
 │   ├── index.html  
 │   └── login.html  
-├── static/               # CSS & JS files  
+├── static/                # CSS & JS files  
 │   ├── style.css  
 │   └── script.js  
 └── README.md              # Project documentation  
 
-
+```
 ---
 
 ## ⚙️ Installation & Setup
@@ -52,18 +53,19 @@ Smart-Task-Manager/
    
 4.  Set up the MySQL database:
 
-  -> Create a database (e.g., task_manager)  
-  -> Run schema.sql to create tables  
+  - Create a database (e.g., task_manager)
+  - Run schema.sql to create tables  
   
 4. Update database credentials in db.py (host, user, password, db name)  
   
 5. Run the Flask app:  
+   ```bash
    python app.py  
   
 6. Open in browser:  
    http://127.0.0.1:5000
   
-##Screenshots:
+## Screenshots:
 Login page:  
 ![Login page image](images/LOGIN.png)
 

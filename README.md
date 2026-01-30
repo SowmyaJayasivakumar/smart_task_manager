@@ -23,9 +23,9 @@ This project was developed as part of my learning journey to strengthen backend 
 ---
 
 ## 📂 Project Structure
-Smart-Task-Manager/
-│
-├── app.py                 # Main Flask application
+Smart-Task-Manager/  
+│  
+├── app.py                 # Main Flask application  
 ├── db.py                  # Database connection file
 ├── requirements.txt       # Dependencies
 ├── schema.sql             # Database schema
